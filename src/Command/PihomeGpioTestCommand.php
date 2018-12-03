@@ -26,11 +26,14 @@ class PihomeGpioTestCommand extends Command
 
         $gpio = new GPIO(new RPiAdapter());
 
+        foreach (GPIO::PINS as $pinId) {
+            $pins[$pinId] = $gpio->pin($pinId, GPIO::OUT);
+        }
+
         while (true) {
-            foreach (GPIO::PINS as $pinId) {
+            foreach ($pins as $pinId => $pin) {
                 try {
-                    $pin = $gpio->pin($pinId, GPIO::OUT);
-                    if ($pin->getValue() == GPIO::HIGH) {
+                    if ($pin->getValue() === GPIO::HIGH) {
                         $io->text('PIN: ' . $pinId . ' is ON');
                         $pin->setValue(GPIO::LOW);
                     } else {
@@ -42,6 +45,8 @@ class PihomeGpioTestCommand extends Command
                 }
                 sleep(1);
             }
+            $gpio->clear();
+            sleep(2);
         }
     }
 }
