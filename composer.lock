@@ -1,11 +1,60 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f143832e85df629dc1a54d892987b0d4",
+    "content-hash": "61d6ee2ad185a79fe9bcdd0f3ae360da",
     "packages": [
+        {
+            "name": "ballen/gpio",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sanis/gpio.git",
+                "reference": "9df7406d36df2394db8ea621ef45a458d3866e91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sanis/gpio/zipball/9df7406d36df2394db8ea621ef45a458d3866e91",
+                "reference": "9df7406d36df2394db8ea621ef45a458d3866e91",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ballen\\GPIO\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Bobby Allen",
+                    "email": "ballen@bobbyallen.me",
+                    "homepage": "http://bobbyallen.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A RaspberryPi GPIO library written in PHP.",
+            "keywords": [
+                "gpio",
+                "io",
+                "raspberrypi",
+                "rpi"
+            ],
+            "support": {
+                "source": "https://github.com/sanis/gpio/tree/master"
+            },
+            "time": "2018-02-11T10:00:53+00:00"
+        },
         {
             "name": "psr/cache",
             "version": "1.0.1",
@@ -407,16 +456,16 @@
         },
         {
             "name": "symfony/contracts",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/contracts.git",
-                "reference": "4a33574d5771f4b04334cd4f7d43de96a92efb62"
+                "reference": "3edf0ab943d1985a356721952cba36ff31bd6e5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/4a33574d5771f4b04334cd4f7d43de96a92efb62",
-                "reference": "4a33574d5771f4b04334cd4f7d43de96a92efb62",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/3edf0ab943d1985a356721952cba36ff31bd6e5f",
+                "reference": "3edf0ab943d1985a356721952cba36ff31bd6e5f",
                 "shasum": ""
             },
             "require": {
@@ -471,7 +520,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2018-10-31T08:00:32+00:00"
+            "time": "2018-11-24T09:35:08+00:00"
         },
         {
             "name": "symfony/debug",
@@ -1390,7 +1439,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ballen/gpio": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
