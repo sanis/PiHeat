@@ -4,21 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "883a5adbde655b0c5cb674552e7532f1",
+    "content-hash": "0cabb41350b2a38b8d399e47c54ccb73",
     "packages": [
         {
             "name": "ballen/gpio",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sanis/gpio.git",
-                "reference": "9df7406d36df2394db8ea621ef45a458d3866e91"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sanis/gpio/zipball/9df7406d36df2394db8ea621ef45a458d3866e91",
-                "reference": "9df7406d36df2394db8ea621ef45a458d3866e91",
-                "shasum": ""
+                "url": "https://github.com/sanis/gpio",
+                "reference": "919b8d674ecd4c14a2e50b17ee87384506cf0c56"
             },
             "require": {
                 "php": ">=7.0.0"
@@ -50,10 +44,7 @@
                 "raspberrypi",
                 "rpi"
             ],
-            "support": {
-                "source": "https://github.com/sanis/gpio/tree/master"
-            },
-            "time": "2018-02-11T10:00:53+00:00"
+            "time": "2018-12-03T20:55:32+00:00"
         },
         {
             "name": "psr/cache",
